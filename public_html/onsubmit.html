@@ -1,0 +1,23 @@
+<<! DOCTYPE html>
+<Html>
+<Body>
+
+<P> Este ejemplo utiliza el DOM HTML para asignar un evento "onsubmit" a un elemento de formulario. </ P>
+
+<P> Cuando envía el formulario, se activa una función que avisa un texto. </ P>
+
+<Form id = "myForm" action = "/ action_page.php">
+  Introduzca el nombre: <input type = "text" name = "fname">
+  <Input type = "submit" value = "Enviar">
+</ Form>
+
+<Script>
+Document.getElementById ("myForm"). Onsubmit = function () {miFunción ()};
+
+Function myFunction () {
+    Alert ("El formulario fue enviado");
+}
+</ Script>
+
+</ Body>
+</ Html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<P> Este ejemplo utiliza el DOM HTML para asignar un evento "onchange" a un elemento de entrada. </ P>
+
+Escriba su nombre: <input type = "text" id = "fname">
+
+<P> Cuando abandona el campo de entrada, se activa una función que transforma el texto de entrada en mayúsculas. </ P>
+<script>
+document.getElementById("fname").onchange = function() {myFunction()};
+
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+</script>
+
+</body>
+</html>

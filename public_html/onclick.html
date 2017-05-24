@@ -1,0 +1,58 @@
+<!DOCTYPE html><!--
+<html>
+<body>
+
+<p onclick="myFunction(this, 'red')">Click me to change my text color.</p>
+
+<script>
+function myFunction(elmnt,clr) {
+    elmnt.style.color = clr;
+}
+</script>
+
+</body>
+</html>----------------------------------------------------->
+<!DOCTYPE html>
+<!DOCTYPE html><!--
+<html>
+<body>
+
+<p>This example uses the HTML DOM to assign an "ondblclick" event to a p element.</p>
+
+<p id="demo">Double-click me.</p>
+
+<script>
+document.getElementById("demo").ondblclick = function() {myFunction()};
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "I was double-clicked!";
+}
+</script>
+
+</body>
+</html>-----------------------------------------------> 
+               
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the HTML DOM to assign an "onmousedown" and "onmouseup" event to a p element.</p>
+
+<p id="demo">Click me.</p>
+
+<script>
+document.getElementById("demo").onmousedown = function() {mouseDown()};
+document.getElementById("demo").onmouseup = function() {mouseUp()};
+
+function mouseDown() {
+    document.getElementById("demo").innerHTML = "The mouse button is held down.";
+}
+
+function mouseUp() {
+    document.getElementById("demo").innerHTML = "You released the mouse button.";
+}
+</script>
+
+</body>
+</html>
+

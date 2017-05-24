@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<P> Este ejemplo usa el DOM HTML para asignar un evento "onreset" a un elemento de formulario. </ P>
+
+<P> Al restablecer el formulario, se activa una función que genera un texto. </ P>
+<form id="myForm">
+  Enter name: <input type="text">
+  <input type="reset">
+</form>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myForm").onreset = function() {myFunction()};
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "El formulario fue restablecido ";
+}
+</script>
+
+</body>
+</html>
